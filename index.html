@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Automotive - Your Engineering Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @media (max-width: 768px) {
+            .cert-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="top-bar-left">
+                        <span class="hidden-mobile">Talk to our Engineering Expert... Learn More</span>
+                        <a href="tel:+911234567890" class="phone-link">
+                            <i class="fas fa-phone"></i> Call: +91 96000 57571
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <div class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <button onclick="scrollToSection('hero')" class="logo-btn" style="padding: 0; background: transparent; border: none;">
+                            <img src="images/logo.png" alt="SS Precision Logo" style="height: 50px; width: auto;">
+                        </button>
+                    </div>
+
+                    <nav class="desktop-nav">
+                        <button onclick="location.href='index.html'">HOME</button>
+                        <button onclick="location.href='index.html#about'">ABOUT</button>
+                        <button onclick="location.href='automotive.html'">PRODUCTS</button>
+                        <button onclick="location.href='index.html#infrastructure'">INFRASTRUCTURE</button>
+                        <button onclick="location.href='index.html#skills'">SKILLS</button>
+                        <button onclick="location.href='index.html#milestones'">JOURNEY</button>
+                        <button onclick="location.href='index.html#contact'">CONTACT</button>
+                    </nav>
+
+                    <div class="nav-actions">
+                        <div class="search-box">
+                            <input type="search" placeholder="Search">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="nav-buttons">
+                            <a href="BROCHURE SS PRECISION.pdf" target="_blank" class="btn btn-accent" style="text-decoration: none;">E-BROCHURE</a>
+                            <a href="ISO CERTIFICATE SS PRECISION.pdf" target="_blank" class="btn btn-accent" style="text-decoration: none;">CORPORATE PROFILE</a>
+                        </div>
+                    </div>
+
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div id="mobileMenu" class="mobile-menu">
+                    <nav>
+                        <button onclick="scrollToSection('hero')">HOME</button>
+                        <button onclick="scrollToSection('about')">ABOUT</button>
+                        <button onclick="location.href='automotive.html'">PRODUCTS</button>
+                        <button onclick="scrollToSection('infrastructure')">INFRASTRUCTURE</button>
+                        <button onclick="scrollToSection('skills')">SKILLS</button>
+                        <button onclick="scrollToSection('milestones')">JOURNEY</button>
+                        <button onclick="scrollToSection('contact')">CONTACT</button>
+                        <div style="display: flex; gap: 0.5rem; width: 100%;">
+                            <a href="BROCHURE SS PRECISION.pdf" target="_blank" class="btn btn-accent" style="text-decoration: none; flex: 1; text-align: center;">E-BROCHURE</a>
+                            <a href="ISO CERTIFICATE SS PRECISION.pdf" target="_blank" class="btn btn-accent" style="text-decoration: none; flex: 1; text-align: center;">CORPORATE PROFILE</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 110px;">
+        <!-- Hero Carousel -->
+        <section id="hero" class="hero-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="carousel-slide active" style="background-image: url('images/homeimg1.png');">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-content">
+                            <h1>SS PRECISION</h1>
+                            <p>Your Engineering Solutions</p>
+                            <button onclick="scrollToSection('about')" class="btn btn-outline-white">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('images/homeimg2.png');">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-content">
+                            <h1>Your Trusted Partner in High-Precision Manufacturing</h1>
+                            <p>Specializing in transmission parts, pulleys, sleeves, specialty fasteners, and critical machined components for global automotive applications.</p>
+                            <button onclick="scrollToSection('about')" class="btn btn-outline-white">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('images/homeimg3.png');">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-content">
+                            <h1>Precision Manufacturing Powered by Innovation</h1>
+                            <p>Delivering high-accuracy CNC machined components with cutting-edge technology and stringent quality control.</p>
+                            <button onclick="scrollToSection('about')" class="btn btn-outline-white">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" style="background-image: url('images/homeimg2.png');">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-content">
+                            <h1>Engineering Precision. Delivering Excellence.</h1>
+                            <p>A leading CNC-based manufacturer of high-precision machined components and sub-assemblies serving automotive and industrial sectors since 2015.</p>
+                            <button onclick="scrollToSection('about')" class="btn btn-outline-white">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-prev" onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn carousel-next" onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-dots">
+                    <button class="dot active" onclick="goToSlide(0)"></button>
+                    <button class="dot" onclick="goToSlide(1)"></button>
+                    <button class="dot" onclick="goToSlide(2)"></button>
+                    <button class="dot" onclick="goToSlide(3)"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section bg-light">
+            <div class="container">
+                <div class="text-center mb-large animate-on-scroll fade-in-up">
+                    <p class="text-primary text-sm font-semibold">Crafted with Care</p>
+                    <h2 class="section-title">About SS Precision</h2>
+                    <p class="text-muted">Since 2015</p>
+                </div>
+
+                <div class="card card-large animate-on-scroll fade-in-up">
+                    <p class="text-lg text-center">
+                        Expert in manufacturing a unique range of high-quality Machined Transmission parts, Sleeves, and Pulleys. 
+                        These are very durable, corrosion-resistant thereby providing longer service time. They all undergo very 
+                        stringent quality analysis to ensure high quality stranded to the clients.
+                    </p>
+                </div>
+
+                <div class="grid-3 mt-large">
+                    <div class="card card-hover animate-on-scroll fade-in-up stagger-1">
+                        <div class="card-with-icon-inline">
+                            <div class="icon-box-small">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title-sm">EXPERIENCE</h3>
+                                <p class="card-description-sm">
+                                    A result-oriented professional with over 12 years of rich experience in the areas of industrial 
+                                    automotive and engineering solutions. Proven knowledge in Automation Engineering, 
+                                    Digitization of the process plant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover animate-on-scroll fade-in-up stagger-2">
+                        <div class="card-with-icon-inline">
+                            <div class="icon-box-small">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title-sm">EXPERTISE</h3>
+                                <p class="card-description-sm">
+                                    Expert in manufacturing a unique range of high-quality Machined Transmission parts, Sleeves, and Pulleys. 
+                                    These are very durable, corrosion-resistant thereby providing longer service time. They all undergo very 
+                                    stringent quality analysis to ensure high quality stranded to the clients.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover animate-on-scroll fade-in-up stagger-3">
+                        <div class="card-with-icon-inline">
+                            <div class="icon-box-small">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title-sm">CERTIFICATION</h3>
+                                <p class="card-description-sm">
+                                    ISO 9001:2015 Certified company. The company is registered under MSME. 
+                                    The products are maintained with high accuracy at each process.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-large">
+                    <div class="card card-large animate-on-scroll fade-in-up">
+                        <div style="text-align: center;">
+                            <img src="images/grouppicture.png" alt="SS Precision Team" style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 2rem;">
+                            <p class="text-lg" style="line-height: 1.8; color: #555;">
+                                A leading manufacturer of CNC-based high-precision machined products such as sub-assemblies, 
+                                components, and speciality fasteners catering to Automotive and Non-Automotive applications 
+                                since 2015.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section bg-white">
+            <div class="container">
+                <div class="text-center mb-large animate-on-scroll fade-in-up">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="text-muted max-w-large mx-auto">
+                        Comprehensive manufacturing solutions for precision machined components
+                    </p>
+                </div>
+
+                <div class="grid-3">
+                    <div class="card card-hover animate-on-scroll fade-in-up stagger-1">
+                        <div class="card-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3 class="card-title">Forging (Hot & Cold)</h3>
+                        <p class="card-description">
+                            Our Forgings can be into customized shapes either by the force of a falling ram upon an anvil or by a die press enclosing a piece of metal and squeeze-forming the part.
+                        </p>
+                    </div>
+
+                    <div class="card card-hover animate-on-scroll fade-in-up stagger-2">
+                        <div class="card-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3 class="card-title">Machining (CNC Turning & Milling)</h3>
+                        <p class="card-description">
+                            Offering a wide range of parts to be machined, you will receive reports just as if you were in our factory.
+                        </p>
+                    </div>
+
+                    <div class="card card-hover animate-on-scroll fade-in-up stagger-3">
+                        <div class="card-icon">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <h3 class="card-title">Turnmill</h3>
+                        <p class="card-description">
+                            We ensure to achieve the desired shape of the tool by feeding in a chuck and adhering to the removal process until it is achieved
+                        </p>
+                    </div>
+
+                    <div class="card card-hover animate-on-scroll fade-in-up stagger-4">
+                        <div class="card-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3 class="card-title">Broaching</h3>
+                        <p class="card-description">
+                            Our Broaching has a machining process that uses a toothed tool to remove material in a consistent and accurate way
+                        </p>
+                    </div>
+
+                    <div class="card card-hover animate-on-scroll fade-in-up stagger-5">
+                        <div class="card-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3 class="card-title">Plating & Heat Treatment (approved outsource)</h3>
+                        <p class="card-description">
+                            We have an excellent outsourced vendor with prominent furnace operations that alters the surface structure of any metal part
+                        </p>
+                    </div>
+
+                    <div class="card card-hover animate-on-scroll fade-in-up stagger-6">
+                        <div class="card-icon">
+                            <i class="fas fa-compact-disc"></i>
+                        </div>
+                        <h3 class="card-title">CNC Grinding</h3>
+                        <p class="card-description">
+                            We undertake complex shapes workpieces with relatively producing high-quality standard output through our CNC grinding process
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        
+        <!-- Stats Section -->
+        <section class="section bg-white">
+            <div class="container">
+                <div class="text-center mb-large animate-on-scroll fade-in-up">
+                    <h2 class="section-title">We are focused & committed to our customers</h2>
+                    <p class="text-muted max-w-large mx-auto">
+                        We are truly driven by our values to make engineering solutions available to everyone. 
+                        We not only intend to bring change but also to intend to make it self-sustainable
+                    </p>
+                </div>
+
+                <div class="grid-4">
+                    <div class="card card-hover text-center animate-on-scroll scale-in stagger-1">
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Plus Employees</div>
+                    </div>
+                    <div class="card card-hover text-center animate-on-scroll scale-in stagger-2">
+                        <div class="stat-value">9</div>
+                        <div class="stat-label">Satisfied Clients</div>
+                    </div>
+                    <div class="card card-hover text-center animate-on-scroll scale-in stagger-3">
+                        <div class="stat-value">3</div>
+                        <div class="stat-label">Ongoing Projects</div>
+                    </div>
+                    <div class="card card-hover text-center animate-on-scroll scale-in stagger-4">
+                        <div class="stat-value">176+</div>
+                        <div class="stat-label">Plus parts</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-light">
+            <div class="container">
+                <div class="text-center mb-large animate-on-scroll fade-in-up">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="text-muted max-w-large mx-auto">
+                        We have built years of expertise and our team consists of highly skilled professionals 
+                        in the field of CNC machines based manufacturing activities
+                    </p>
+                </div>
+
+                <div class="card animate-on-scroll fade-in-up">
+                    <div class="table-responsive">
+                        <table class="skills-table">
+                            <thead>
+                                <tr>
+                                    <th class="text-left">Skills</th>
+                                    <th class="text-center">0 – 5 years</th>
+                                    <th class="text-center">6 – 10 years</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Part Programming</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"><i class="fas fa-check text-primary"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Part Specific Setting</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"><i class="fas fa-check text-primary"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Part Specific Work Holding Selection</td>
+                                    <td class="text-center"><i class="fas fa-check text-primary"></i></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <td>Tooling Selection</td>
+                                    <td class="text-center"><i class="fas fa-check text-primary"></i></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <td>Cutting Insert Selection</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"><i class="fas fa-check text-primary"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Jigs and Fixture Design and Development</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"><i class="fas fa-check text-primary"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Machine Maintenance Skills</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"><i class="fas fa-check text-primary"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Manufacturing Process Knowledge</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"><i class="fas fa-check text-primary"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Machine Handling Skill</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"><i class="fas fa-check text-primary"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Raw Material Properties</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"><i class="fas fa-check text-primary"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Measurement System Handling</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"><i class="fas fa-check text-primary"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Quality Management Systems (QMS)</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"><i class="fas fa-check text-primary"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Section -->
+        <section class="section bg-white">
+            <div class="container">
+                <div class="text-center mb-large animate-on-scroll fade-in-up">
+                    <h2 class="section-title">why choose SS Precision?</h2>
+                </div>
+
+                <div class="grid-2 mb-medium">
+                    <div class="card card-hover animate-on-scroll fade-in-left stagger-1">
+                        <div class="card-with-icon-inline">
+                            <div class="icon-box-small">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title-sm">Flexible Pricing Options</h3>
+                                <p class="card-description-sm">We help our clients with highly affordable and flexible pricing options which will suit their business requirements and budget perfectly.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover animate-on-scroll fade-in-right stagger-2">
+                        <div class="card-with-icon-inline">
+                            <div class="icon-box-small">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title-sm">Skilled Team</h3>
+                                <p class="card-description-sm">Our team comprises some of the most experienced and skilled who can cater to all your requirements with ease.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover animate-on-scroll fade-in-left stagger-3">
+                        <div class="card-with-icon-inline">
+                            <div class="icon-box-small">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title-sm">Error-free Services</h3>
+                                <p class="card-description-sm">Being an Engineering & Professional firm, you can rest assured that all the services delivered by our team will be of the best quality and error-free</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover animate-on-scroll fade-in-right stagger-4">
+                        <div class="card-with-icon-inline">
+                            <div class="icon-box-small">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title-sm">Highly Scalable Services</h3>
+                                <p class="card-description-sm">We have the required skills and bandwidth to scale up the service requirements and ramp up the project team size as and when the client asks for it.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover animate-on-scroll fade-in-left stagger-5">
+                        <div class="card-with-icon-inline">
+                            <div class="icon-box-small">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title-sm">Quick Turnaround Time</h3>
+                                <p class="card-description-sm">We operate through several delivery locations across the South region. This allows us to deliver the best quality services within a quick time.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover animate-on-scroll fade-in-right stagger-6">
+                        <div class="card-with-icon-inline">
+                            <div class="icon-box-small">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title-sm">Advanced Quality Control</h3>
+                                <p class="card-description-sm">Equipped with state-of-the-art measuring systems including CMM, Contour measurement Machine, Profile projector, and Trimos 2d Height Gauge ensuring precision and accuracy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infrastructure Section -->
+        <section id="infrastructure" class="section bg-light">
+            <div class="container">
+                <div class="text-center mb-large animate-on-scroll fade-in-up">
+                    <h2 class="section-title">Our Infrastructure</h2>
+                    <p class="text-muted max-w-large mx-auto">
+                        We are fully equipped with Measuring systems like CMM, Contour measurement Machine, Profile projector, 
+                        Trimos 2d Height Gauge, Surface Finish Testing Instruments.
+                    </p>
+                </div>
+
+                <div class="grid-3 mb-medium">
+                    <div class="card card-hover animate-on-scroll scale-in stagger-1">
+                        <img src="images/infrastructure1.png" alt="Infrastructure 1" style="width: 100%; height: 300px; object-fit: cover;">
+                    </div>
+                    <div class="card card-hover animate-on-scroll scale-in stagger-2">
+                        <img src="images/infrastructure2.png" alt="Infrastructure 2" style="width: 100%; height: 300px; object-fit: cover;">
+                    </div>
+                    <div class="card card-hover animate-on-scroll scale-in stagger-3">
+                        <img src="images/infrastructure3.png" alt="Infrastructure 3" style="width: 100%; height: 300px; object-fit: cover;">
+                    </div>
+                    <div class="card card-hover animate-on-scroll scale-in stagger-4">
+                        <img src="images/infrastructure4.png" alt="Infrastructure 4" style="width: 100%; height: 300px; object-fit: cover;">
+                    </div>
+                    <div class="card card-hover animate-on-scroll scale-in stagger-5">
+                        <img src="images/infrastructure5.png" alt="Infrastructure 5" style="width: 100%; height: 300px; object-fit: cover;">
+                    </div>
+                    <div class="card card-hover animate-on-scroll scale-in stagger-6">
+                        <img src="images/infrastructure6.png" alt="Infrastructure 6" style="width: 100%; height: 300px; object-fit: cover;">
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-primary btn-lg">See More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section bg-white">
+            <div class="container container-medium">
+                <div class="text-center mb-large animate-on-scroll fade-in-up">
+                    <h2 class="section-title">Our Certifications</h2>
+                    <p class="text-muted max-w-large mx-auto">
+                        Committed to quality excellence with international standards and certifications
+                    </p>
+                </div>
+
+                <div class="text-center animate-on-scroll fade-in-up">
+                    <img src="images/certificate.png" alt="Quality Certifications" style="max-width: 500px; width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); transition: transform 0.3s ease;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Milestone Section -->
+        <section id="milestones" class="section bg-light" style="padding: 0;">
+            <div style="width: 100%; max-width: 100%; margin: 0; padding: 3rem 0;">
+                <div class="container">
+                    <div class="text-center mb-large">
+                        <h2 class="section-title">Our Journey & Milestones</h2>
+                        <p class="text-muted max-w-large mx-auto">
+                            Key achievements and milestones in our journey towards excellence
+                        </p>
+                    </div>
+                </div>
+                <div style="width: 100%; overflow: hidden;">
+                    <img src="images/milestone.png" alt="Company Milestones" style="width: 100%; height: auto; display: block;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section class="section bg-white">
+            <div class="container">
+                <!-- Trusted By -->
+                <div class="mb-xlarge">
+                    <h2 class="text-center section-subtitle mb-medium">TRUSTED BY</h2>
+                    <div class="grid-5">
+                        <div class="card card-hover text-center">
+                            <img src="images/client1.png" alt="Client 1" style="max-width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                        <div class="card card-hover text-center">
+                            <img src="images/client2.png" alt="Client 2" style="max-width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                        <div class="card card-hover text-center">
+                            <img src="images/client3.png" alt="Client 3" style="max-width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                        <div class="card card-hover text-center">
+                            <img src="images/client4.png" alt="Client 4" style="max-width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                        <div class="card card-hover text-center">
+                            <img src="images/client5.png" alt="Client 5" style="max-width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OEMs -->
+                
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-light">
+            <div class="container container-medium">
+                <div class="text-center mb-large animate-on-scroll fade-in-up">
+                    <h2 class="section-title">Let's Start Something new Say Hello!</h2>
+                    <p class="text-muted">Please fill in your details with your queries! We will be happy to get back you!</p>
+                </div>
+
+                <div class="card card-large animate-on-scroll fade-in-up">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 1234567890" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your requirements..." rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-accent btn-full">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="text-center">
+                <div style="margin-bottom: 1rem;">
+                    <img src="images/logo.png" alt="SS Precision Logo" style="height: 60px; width: auto; margin-bottom: 1rem;">
+                </div>
+                <p>&copy; <span id="currentYear"></span> SS PRECISION. All rights reserved.</p>
+                <p class="footer-tagline">Your Engineering Solutions Partner Since 2015</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919600057571" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
